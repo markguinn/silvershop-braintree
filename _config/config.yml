@@ -1,0 +1,8 @@
+---
+Name: shopbraintree
+---
+Injector:
+  OnsitePaymentCheckoutComponent:
+    class: BraintreePaymentCheckoutComponent
+Payment:
+  token_key: payment_method_nonce

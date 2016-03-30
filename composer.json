@@ -1,0 +1,26 @@
+{
+    "name": "markguinn/silvershop-braintree",
+    "description": "Braintree payment integration for SilverShop e-commerce",
+    "type": "silverstripe-module",
+    "homepage": "http://github.com/markguinn/silvershop-braintree",
+    "keywords": [
+        "silverstripe",
+        "silvershop",
+        "payment",
+        "braintree",
+        "paypal"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mark Guinn",
+            "email": "markguinn@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "http://github.com/markguinn/silvershop-braintree/issues"
+    },
+    "extra": {
+        "installer-name": "silvershop-braintree"
+    }
+}
