@@ -17,6 +17,13 @@
             "email": "markguinn@gmail.com"
         }
     ],
+    "require": {
+        "silverstripe/framework": "~3.1",
+        "silvershop/core": "2.0.x-dev",
+        "omnipay/braintree": "~2.0@dev",
+        "braintree/braintree_php": "~2.0",
+        "burnbright/silverstripe-omnipay": "2.0.x-dev"
+    },
     "support": {
         "issues": "http://github.com/markguinn/silvershop-braintree/issues"
     },
