@@ -21,12 +21,12 @@ class BraintreePaymentCheckoutComponentTest extends SapphireTest
         parent::setUp();
         $mockRequest2 = $this->getMockBuilder('Omnipay\Braintree\Message\ClientTokenResponse')
             ->disableOriginalConstructor()->getMock();
-        $mockRequest2->method('getToken')->willReturn('abc123');
+        $mockRequest2->method('getToken')->will($this->returnValue('abc123'));
         $mockRequest1 = $this->getMockBuilder('Omnipay\Braintree\Message\ClientTokenRequest')
             ->disableOriginalConstructor()->getMock();
-        $mockRequest1->method('send')->willReturn($mockRequest2);
+        $mockRequest1->method('send')->will($this->returnValue($mockRequest2));
         $mockGateway = $this->getMock('Omnipay\Braintree\Gateway');
-        $mockGateway->method('clientToken')->willReturn($mockRequest1);
+        $mockGateway->method('clientToken')->will($this->returnValue($mockRequest1));
         $this->cart = new Order; //$this->getFixtureFactory()->createObject('Order', 'o', ['Status' => 'Cart']);
         ShoppingCart::singleton()->setCurrent($this->cart);
         $this->sut = new BraintreePaymentCheckoutComponent();
