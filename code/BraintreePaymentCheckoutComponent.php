@@ -1,4 +1,5 @@
 <?php
+use SilverStripe\Omnipay\Service\PurchaseService;
 
 /**
  * This replaces the default OnsitePaymentCheckoutComponent and uses braintree's dropin UI,
