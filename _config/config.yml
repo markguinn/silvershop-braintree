@@ -4,5 +4,7 @@ Name: shopbraintree
 Injector:
   OnsitePaymentCheckoutComponent:
     class: BraintreePaymentCheckoutComponent
-Payment:
-  token_key: payment_method_nonce
+GatewayInfo:
+  Braintree:
+    parameters:
+      token_key: payment_method_nonce
